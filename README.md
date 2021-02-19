@@ -1,4 +1,4 @@
-# university_coursefinder_app
+# University And Course Finder App
 
 A new Flutter application.
 
