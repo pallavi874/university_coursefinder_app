@@ -1,16 +1,5 @@
 # University And Course Finder App
 
-A new Flutter application.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This app is made for trithon 2021.
+The main purpose of this app is to solve the problem of the students of searching their dream colleges or courses.
+This app integrates all the information required by the students to select their desired carrer path.
