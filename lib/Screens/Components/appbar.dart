@@ -27,7 +27,7 @@ AppBar Appbar(BuildContext context) {
         ],
       ),
     ),
-    actions: <Widget>[IconButton(icon: SvgPicture.asset("assets/icons/searchBar.svg"),
+    actions: <Widget>[IconButton(icon: SvgPicture.asset("assets/icons/home.svg"),
       onPressed: () {},
     )
     ],
