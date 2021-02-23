@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "592128892684",
+    "project_id": "unicour-9a31d",
+    "storage_bucket": "unicour-9a31d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592128892684:android:5c9c7a7ca8ffacfe06b329",
+        "android_client_info": {
+          "package_name": "com.university_coursefinder_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592128892684-vg1mcmqqrj7nu5tb7d50rui9b1hgemna.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.university_coursefinder_app",
+            "certificate_hash": "a01d02860fbce92d23faf0ddcef303571d9b37df"
+          }
+        },
+        {
+          "client_id": "592128892684-tpmg00nqltd36m08q017ev05kc62bbvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKtQGvOIWQtPTvZaFhxI6zuSxh7_N_n5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592128892684-tpmg00nqltd36m08q017ev05kc62bbvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

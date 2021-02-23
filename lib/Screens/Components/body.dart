@@ -36,6 +36,8 @@ class SearchBox extends StatelessWidget {
           hintStyle: TextStyle(color: kSecondaryColor),
         ),
       ),
+      
+      
 
     );
   }

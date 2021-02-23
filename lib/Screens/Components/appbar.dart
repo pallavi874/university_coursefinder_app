@@ -17,11 +17,11 @@ AppBar Appbar(BuildContext context) {
             .copyWith(fontWeight: FontWeight.bold),
         children: [
           TextSpan(
-            text: "DESTINO",
+            text: "UNI",
             style: TextStyle(color: kSecondaryColor),
           ),
           TextSpan(
-            text: "APP",
+            text: "COUR",
             style: TextStyle(color: kPrimaryColor),
           ),
         ],
