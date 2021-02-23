@@ -54,7 +54,7 @@ class MainDrawer extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                Navigator.of(context).pop();
+                  Navigator.of(context).pop();
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) => ProfileScreen(),
                 ));

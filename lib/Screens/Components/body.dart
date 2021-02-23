@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:university_coursefinder_app/Screens/course.dart';
+import 'package:university_coursefinder_app/Screens/univer_clg.dart';
 import 'package:university_coursefinder_app/constants.dart';
 class Body extends StatelessWidget{
   @override
@@ -55,7 +57,12 @@ class MyButtons extends StatelessWidget{
              children: <Widget>[
                SizedBox(width: 20),
             InkWell(
-            onTap: () => null,
+            onTap: () {
+              // Navigator.of(context).pop();
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => UniverClg(),
+              ));
+            },
              child: Container(
             width: 150.0,
             decoration: BoxDecoration(boxShadow: [
@@ -70,8 +77,8 @@ class MyButtons extends StatelessWidget{
               Container(
                 height: 50.0,
                  width: 110.0,
-                 padding: EdgeInsets.symmetric(vertical: 12.0,horizontal: 12.0),
-                 child: Text("Button", style: Theme.of(context).textTheme.button
+                 padding: EdgeInsets.symmetric(vertical: 9.0,horizontal: 9.0),
+                 child: Text("University/College", style: Theme.of(context).textTheme.button
                      .apply(color: Colors.black),
                  ),
                 decoration: BoxDecoration(
@@ -93,7 +100,12 @@ class MyButtons extends StatelessWidget{
           ),
                SizedBox(width: 20),
                InkWell(
-                 onTap: () => null,
+                 onTap: ()  {
+                   // Navigator.of(context).pop();
+                   Navigator.push(context, MaterialPageRoute(
+                     builder: (context) => Course(),
+                   ));
+                 },
                  child: Container(
                    width: 150.0,
                    decoration: BoxDecoration(boxShadow: [
@@ -109,7 +121,7 @@ class MyButtons extends StatelessWidget{
                          height: 50.0,
                          width: 110.0,
                          padding: EdgeInsets.symmetric(vertical: 12.0,horizontal: 12.0),
-                         child: Text("Button", style: Theme.of(context).textTheme.button
+                         child: Text("Courses", style: Theme.of(context).textTheme.button
                              .apply(color: Colors.black),
                          ),
                          decoration: BoxDecoration(
