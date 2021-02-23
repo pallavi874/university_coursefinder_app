@@ -1,13 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:university_coursefinder_app/Screens/course.dart';
+import 'package:university_coursefinder_app/Screens/univer_clg.dart';
 import 'package:university_coursefinder_app/constants.dart';
 class Body extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[SearchBox(onChanged: (value) {},
-      )],
+      ),
+        MyButtons(),
+      ],
+
     );
   }
 }
@@ -36,9 +42,109 @@ class SearchBox extends StatelessWidget {
           hintStyle: TextStyle(color: kSecondaryColor),
         ),
       ),
-      
-      
 
     );
   }
 }
+class MyButtons extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    final MyButtons = "Flat Button";
+    return Container(
+      // home: Scaffold(
+      //   body: Center(
+      child: Row(
+          children: <Widget>[
+            SizedBox(width: 20),
+            InkWell(
+              onTap: () {
+                // Navigator.of(context).pop();
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => UniverClg(),
+                ));
+              },
+              child: Container(
+                width: 150.0,
+                decoration: BoxDecoration(boxShadow: [
+                  BoxShadow(
+                      offset: Offset(0.0, 20.0),
+                      blurRadius: 30.0,
+                      color: Colors.black12),
+                ], color: Colors.white, borderRadius: BorderRadius.circular(22.0)
+                ),
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      height: 50.0,
+                      width: 110.0,
+                      padding: EdgeInsets.symmetric(vertical: 9.0,horizontal: 9.0),
+                      child: Text("University/College", style: Theme.of(context).textTheme.button
+                          .apply(color: Colors.black),
+                      ),
+                      decoration: BoxDecoration(
+                          color: Colors.greenAccent,
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(98.0),
+                              topLeft: Radius.circular(98.0),
+                              bottomRight: Radius.circular(200.0)
+                          )
+                      ),
+                    ),
+                    Icon(Icons.home,
+                      size: 30.0,
+                    ),
+                  ],
+                ),
+              ),
+
+            ),
+            SizedBox(width: 20),
+            InkWell(
+              onTap: ()  {
+                // Navigator.of(context).pop();
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Course(),
+                ));
+              },
+              child: Container(
+                width: 150.0,
+                decoration: BoxDecoration(boxShadow: [
+                  BoxShadow(
+                      offset: Offset(0.0, 20.0),
+                      blurRadius: 30.0,
+                      color: Colors.black12),
+                ], color: Colors.white, borderRadius: BorderRadius.circular(22.0)
+                ),
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      height: 50.0,
+                      width: 110.0,
+                      padding: EdgeInsets.symmetric(vertical: 12.0,horizontal: 12.0),
+                      child: Text("Courses", style: Theme.of(context).textTheme.button
+                          .apply(color: Colors.black),
+                      ),
+                      decoration: BoxDecoration(
+                          color: Colors.greenAccent,
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(98.0),
+                              topLeft: Radius.circular(98.0),
+                              bottomRight: Radius.circular(200.0)
+                          )
+                      ),
+                    ),
+                    Icon(Icons.home,
+                      size: 30.0,
+                    ),
+                  ],
+                ),
+              ),
+
+            ),
+          ]
+      ),
+
+    );
+  }
+}
+

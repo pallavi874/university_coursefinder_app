@@ -6,6 +6,7 @@ import 'Components/Appbar.dart';
 // import 'package:university_coursefinder_app/components/bottom_nav_bar.dart';
 import 'package:university_coursefinder_app/Screens/Components/Appbar.dart';
 import 'package:university_coursefinder_app/Screens/Components/Body.dart';
+import 'package:university_coursefinder_app/Screens/main_drawer.dart';
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -16,6 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Appbar(context),
+      drawer: MainDrawer(),
       // bottomNavigationBar: BottomNavBar(),
          body: Body(),
     );

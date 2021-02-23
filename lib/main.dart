@@ -22,6 +22,7 @@ import 'package:university_coursefinder_app/Screens/SplashScreen.dart';
 import 'package:university_coursefinder_app/Screens/Auth/Login.dart';
  import 'package:firebase_core/firebase_core.dart';
  import './Screens/HomeScreen.dart';
+import 'Screens/Auth/SignUp.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -57,7 +58,7 @@ class MyApp extends StatelessWidget {
                     body2: TextStyle(color: kSecondaryColor),
                   ),
                 ),
-                home: SplashScreen(),
+                home: SignUp(),
               );
             }
     
