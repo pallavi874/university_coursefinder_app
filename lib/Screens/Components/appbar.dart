@@ -5,10 +5,10 @@ AppBar Appbar(BuildContext context) {
   return AppBar(
     backgroundColor: Colors.white,
     elevation: 0,
-    leading: IconButton(
-      icon: SvgPicture.asset("assets/icons/menuBar.svg"),
-      onPressed: () {},
-    ),
+    // leading: IconButton(
+    //   icon: SvgPicture.asset("assets/icons/menuBar.svg"),
+    //   onPressed: () {},
+    // ),
     title: RichText(
       text: TextSpan(
         style: Theme.of(context)
@@ -17,11 +17,11 @@ AppBar Appbar(BuildContext context) {
             .copyWith(fontWeight: FontWeight.bold),
         children: [
           TextSpan(
-            text: "DESTINO",
+            text: "UNI",
             style: TextStyle(color: kSecondaryColor),
           ),
           TextSpan(
-            text: "APP",
+            text: "COUR",
             style: TextStyle(color: kPrimaryColor),
           ),
         ],
