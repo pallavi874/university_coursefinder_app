@@ -2,12 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:university_coursefinder_app/Screens/Courses.dart';
+import 'package:university_coursefinder_app/Screens/course.dart';
 import 'package:university_coursefinder_app/Screens/univer_clg.dart';
-import 'package:university_coursefinder_app/Screens/veiw_course.dart';
 import 'package:university_coursefinder_app/constants.dart';
-
-import '../Courses.dart';
 class Body extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -106,7 +103,7 @@ class MyButtons extends StatelessWidget{
               onTap: ()  {
                 // Navigator.of(context).pop();
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => ViewCourse(),
+                  builder: (context) => Course(),
                 ));
               },
               child: Container(

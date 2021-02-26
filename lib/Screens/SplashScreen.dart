@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:university_coursefinder_app/Screens/Auth/Login.dart';
+import 'package:university_coursefinder_app/Screens/Auth/SignUp.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -50,7 +52,12 @@ class _SplashScreenState extends State<SplashScreen> {
                  padding: EdgeInsets.only(left:30,right:30),
 
 
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.of(context).pop();
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => SignUp(),
+                ));
+              },
                 child: Text('Sign Up', style: TextStyle(fontSize: 20,
                  fontWeight: FontWeight.bold,
                  color: Colors.white
@@ -87,8 +94,11 @@ class _SplashScreenState extends State<SplashScreen> {
                 Buttons.Google,
                 text: "Sign up with Google",
                 onPressed: () {
-                  
-                },
+                  Navigator.of(context).pop();
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Login(),
+                ));
+              },
                 )
         ],)
       )

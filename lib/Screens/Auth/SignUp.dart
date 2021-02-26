@@ -15,7 +15,7 @@ class _SignUpState extends State<SignUp> {
  FirebaseAuth _auth = FirebaseAuth.instance;
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
- String _name, _email, _password;
+ String _name, _email, _password,_confirmpassword;
 
  checkAuthentication() async {
 
@@ -173,9 +173,9 @@ class _SignUpState extends State<SignUp> {
 
                          validator: (input)
                          {
-                            if(input.length < 6)
+                            if(input.length < 8)
 
-                            return 'Provide Minimum 6 Character';
+                            return 'Provide Minimum 8 Character';
                          },
 
                             decoration: InputDecoration(
@@ -191,7 +191,32 @@ class _SignUpState extends State<SignUp> {
                          
                        ),
                      ),
-                     SizedBox(height:20),
+
+                    //  Container(
+
+                    //    child: TextFormField(
+
+                    //      validator: (input)
+                    //      {
+                    //         if(input.length < 8 && _password==input)
+
+                    //         return 'Wrong Password';
+                    //      },
+
+                    //         decoration: InputDecoration(
+
+                    //           labelText: 'Confirm Password',
+                    //           prefixIcon:Icon(Icons.refresh),
+                    //         ),
+                    //         obscureText: true,
+
+
+                    //         onSaved: (input) => _confirmpassword = input
+
+                         
+                    //    ),
+                    //  ),
+                    //  SizedBox(height:20),
 
                      RaisedButton(
                        padding: EdgeInsets.fromLTRB(70,10,70,10),

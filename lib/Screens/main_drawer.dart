@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:university_coursefinder_app/Screens/Form/Form_Submission.dart';
 import 'package:university_coursefinder_app/Screens/profile_screen.dart';
 import 'package:university_coursefinder_app/Screens/setting_screen.dart';
 import 'package:university_coursefinder_app/Screens/logout_screen.dart';
-import 'package:university_coursefinder_app/Screens/Form/FillForm.dart';
 
 class MainDrawer extends StatelessWidget {
   @override
@@ -77,21 +75,6 @@ class MainDrawer extends StatelessWidget {
                 ));
               },
               ),
-            ListTile(
-              leading: Icon(Icons.dynamic_form),
-              title: Text(
-                'Form Submission',
-                style: TextStyle(
-                  fontSize: 18,
-                ),
-              ),
-              onTap: () {
-                Navigator.of(context).pop();
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => FillForm(),
-                ));
-              },
-            ),
             ListTile(
               leading: Icon(Icons.arrow_back),
               title: Text(
