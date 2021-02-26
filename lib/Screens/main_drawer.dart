@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:university_coursefinder_app/Screens/profile_screen.dart';
 import 'package:university_coursefinder_app/Screens/setting_screen.dart';
 import 'package:university_coursefinder_app/Screens/logout_screen.dart';
-
+import 'HomePage.dart';
 class MainDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -85,7 +85,7 @@ class MainDrawer extends StatelessWidget {
               ),
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => LogoutScreen(),
+                  builder: (context) => HomePage(),
                 ));
               },
             ),
