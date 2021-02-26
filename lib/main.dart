@@ -23,6 +23,7 @@ import 'package:university_coursefinder_app/Screens/Auth/Login.dart';
  import 'package:firebase_core/firebase_core.dart';
  import './Screens/HomeScreen.dart';
 import 'Screens/Auth/SignUp.dart';
+import 'Screens/Form/Form_Submission.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
