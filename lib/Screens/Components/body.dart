@@ -107,7 +107,7 @@ class MyButtons extends StatelessWidget{
               onTap: ()  {
                 // Navigator.of(context).pop();
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => Course(),
+                  builder: (context) => ViewCourse(),
                 ));
               },
               child: Container(
