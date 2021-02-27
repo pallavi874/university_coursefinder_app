@@ -15,6 +15,7 @@ import 'package:flutter/material.dart';
 //   }
 // }
 import 'package:university_coursefinder_app/Screens/Auth/SignUp.dart';
+import 'package:university_coursefinder_app/Screens/WelcomeScr.dart';
 import 'package:university_coursefinder_app/constants.dart';
 // import 'package:university_coursefinder_app/Screens/main_screen.dart';
 import 'package:university_coursefinder_app/Screens/SplashScreen.dart';
@@ -59,7 +60,7 @@ class MyApp extends StatelessWidget {
                     body2: TextStyle(color: kSecondaryColor),
                   ),
                 ),
-                home: SignUp(),
+                home: WelcomeSrc(),
               );
             }
     

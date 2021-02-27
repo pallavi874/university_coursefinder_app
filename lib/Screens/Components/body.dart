@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:university_coursefinder_app/Screens/DataConnect.dart';
 import 'package:university_coursefinder_app/Screens/course.dart';
 import 'package:university_coursefinder_app/Screens/Colleges.dart';
+import 'package:university_coursefinder_app/Screens/veiw_course.dart';
 import 'package:university_coursefinder_app/constants.dart';
 
 import '../ViewData.dart';
@@ -107,7 +108,7 @@ class MyButtons extends StatelessWidget{
               onTap: ()  {
                 // Navigator.of(context).pop();
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => ViewCourse(),
+                  builder: (context) => ViewData(),
                 ));
               },
               child: Container(
@@ -171,11 +172,11 @@ class MyCard extends StatelessWidget {
                   CircleAvatar( 
                     backgroundColor: Colors.green[500], 
                     radius: 20, 
-                    child: CircleAvatar( 
-                      backgroundImage: NetworkImage( 
-                          "https://pbs.twimg.com/profile_images/1304985167476523008/QNHrwL2q_400x400.jpg"), //NetworkImage 
-                      radius: 100, 
-                    ), //CircleAvatar 
+                    // child: CircleAvatar( 
+                    //   backgroundImage: NetworkImage( 
+                    //       "https://pbs.twimg.com/profile_images/1304985167476523008/QNHrwL2q_400x400.jpg"), //NetworkImage 
+                    //   radius: 100, 
+                    // ), //CircleAvatar 
                   ), 
                   //CirclAvatar 
                   SizedBox( 
