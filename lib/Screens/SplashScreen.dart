@@ -74,7 +74,12 @@ class _SplashScreenState extends State<SplashScreen> {
               RaisedButton(
                 padding: EdgeInsets.only(left:30,right:30),
 
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.of(context).pop();
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Login(),
+                ));
+                },
                 child: Text('Sign In', style: TextStyle(fontSize: 20,
                  fontWeight: FontWeight.bold,
                  color: Colors.white
