@@ -21,6 +21,11 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+<<<<<<< HEAD
+=======
+
+  get: ^3.25.4 
+>>>>>>> 53464a341e37f7367aa93de80f1dc8c572489440
   flutter:
     sdk: flutter
    

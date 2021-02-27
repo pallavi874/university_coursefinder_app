@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
-import 'package:university_coursefinder_app/Screens/Auth/Login.dart';
-import 'package:university_coursefinder_app/Screens/Auth/SignUp.dart';
-
-class SplashScreen extends StatefulWidget {
+import './SplashScreen.dart';
+class WelcomeSrc extends StatefulWidget {
   @override
-  _SplashScreenState createState() => _SplashScreenState();
+  _WelcomeSrcState createState() => _WelcomeSrcState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _WelcomeSrcState extends State<WelcomeSrc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
           SizedBox(height: 45.0),
           Container(
             height:300,
-            child: Image(image: AssetImage('assets/images/pic1.png'),
+            child: Image(image: AssetImage('assets/images/stud.jpg'),
             fit: BoxFit.contain,
             )
           ),
@@ -40,9 +37,9 @@ class _SplashScreenState extends State<SplashScreen> {
             )
           ),
           SizedBox(height:10.0),
-          Text('Find Your Dream College and course at one click',style:TextStyle(color:Colors.black),),
 
-          SizedBox(height: 30.0),
+          Text('Sign In as: ',style:TextStyle(color:Colors.black,fontSize:17,)),
+           SizedBox(height: 30.0),
 
           Row( mainAxisAlignment: MainAxisAlignment.center,
 
@@ -55,10 +52,10 @@ class _SplashScreenState extends State<SplashScreen> {
                 onPressed: (){
                   Navigator.of(context).pop();
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => SignUp(),
+                  builder: (context) => SplashScreen(),
                 ));
               },
-                child: Text('Sign Up', style: TextStyle(fontSize: 20,
+                child: Text('Student', style: TextStyle(fontSize: 20,
                  fontWeight: FontWeight.bold,
                  color: Colors.white
                  ),),
@@ -66,7 +63,7 @@ class _SplashScreenState extends State<SplashScreen> {
                    borderRadius: BorderRadius.circular(10.0),
                    
                    ),
-                   color: Colors.deepOrange[600]
+                   color: Colors.blue
               ),
 
               SizedBox(width:20.0),
@@ -74,13 +71,13 @@ class _SplashScreenState extends State<SplashScreen> {
               RaisedButton(
                 padding: EdgeInsets.only(left:30,right:30),
 
-                onPressed: (){
+                 onPressed: (){
                   Navigator.of(context).pop();
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => Login(),
+                  builder: (context) => SplashScreen(),
                 ));
-                },
-                child: Text('Sign In', style: TextStyle(fontSize: 20,
+              },
+                child: Text('College', style: TextStyle(fontSize: 20,
                  fontWeight: FontWeight.bold,
                  color: Colors.white
                  ),),
@@ -88,23 +85,14 @@ class _SplashScreenState extends State<SplashScreen> {
                    borderRadius: BorderRadius.circular(10.0),
                    
                    ),
-                   color: Colors.deepPurpleAccent
+                   color: Colors.green
               ),
               
             ],
           ),
           SizedBox(height: 20.0),
 
-              SignInButton(
-                Buttons.Google,
-                text: "Sign up with Google",
-                onPressed: () {
-                  Navigator.of(context).pop();
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => Login(),
-                ));
-              },
-                )
+             
         ],)
       )
       
